@@ -13,10 +13,9 @@ namespace week6day3FortuneTellerInheritance
 
         //properties
         protected List<string> Phrases { get; set; } = new List<string>();
-
         public override string Name { get; set; } = "Crystal Ball";
 
-
+        //methods
         public override void Work()
         {
             base.Work();
@@ -24,6 +23,7 @@ namespace week6day3FortuneTellerInheritance
             this.Result = GetPhrase();
         }
 
+        //Could use a refresher on access modifiers, specifically "protected" and "internal"
         protected void CreatePhrases()
         {
             Phrases.Add("Your best friend will be there for you when you need them.");

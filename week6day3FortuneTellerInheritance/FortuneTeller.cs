@@ -6,16 +6,16 @@ using System.Threading.Tasks;
 
 namespace week6day3FortuneTellerInheritance
 {
-    class FortuneTeller
+    class FortuneTeller:Employee
     {
         //I'm just setting this up as a regular old class. 
         //Later, I might choose to make it in a game where I inherit from a Human class
         //(and have a customer also inherit from Human), but for our first round, this is great.
 
         //Properties
-        public string Name { get; set; } = "Esmerelda";
-
-        public string ExperienceLevel { get; set; }
+        public override string Name { get; set; } = "Esmerelda";
+        public override string ExperienceLevel { get; set; } = "beginner";
+        public override decimal Price { get; set; } = 40.00M;
 
         //Methods
 
@@ -23,12 +23,6 @@ namespace week6day3FortuneTellerInheritance
         {
             Console.WriteLine("Hello! Come in ... I feel a presence about you.");
             Console.WriteLine("Let me see what I have to offer you today.");
-        }
-
-        public void StartService(Service service)
-        {
-            //Stubbed
-            Console.WriteLine("For you, my {0}! Yes, perfect. It only costs {1} and that's fine by everyone.", service.Name, service.Price);
         }
 
         public void Farewell()

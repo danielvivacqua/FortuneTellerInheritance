@@ -9,7 +9,8 @@ namespace week6day3FortuneTellerInheritance
     class Magic : Service
     {
         //what is at the base of a magical item?
-        //in our base class, let's say that they all have good or bad magic. In this case, let's just say it's black magic, or just magic.
+        //in our base class, let's say that they all have good or bad magic. In this case, let's just say it's black magic, 
+        //or just magic.
         //now, we have to decide what kind of datatype we want to use to store it.
             //Since there are only 2 values, it would be very efficient to use a bool property
         
@@ -37,6 +38,9 @@ namespace week6day3FortuneTellerInheritance
         }
         public virtual void StateEffectiveness()
         {
+            //This is copied and pasted from Mel's code. I don't know why she included the other properties and only called
+            //out the third {2} variable in this Console.WriteLine. I guess if you wanted to edit the WL later, you'd have
+            //these other properties there to use. Maybe it was just an example of how to use indices.
             Console.WriteLine("In case you're wondering, this method is {2} percent effective.", this.Name, this.Result, this.PercentEffective);
         }
     }

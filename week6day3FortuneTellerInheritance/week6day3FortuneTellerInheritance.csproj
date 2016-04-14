@@ -43,13 +43,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CBT.cs" />
     <Compile Include="CrystalBall.cs" />
+    <Compile Include="Employee.cs" />
     <Compile Include="FortuneTeller.cs" />
     <Compile Include="Magic.cs" />
     <Compile Include="PalmReading.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Service.cs" />
+    <Compile Include="Therapist.cs" />
+    <Compile Include="Therapy.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
